@@ -16,14 +16,14 @@
 		</td>
 	</tr>
 	<tr>
-		<th>Kode MTK</th>
-		<th>:</th>
+		<td>Kode Matakuliah</td>
+		<td>:</td>
 		<td>
 			<?=$kode; ?>
 		</td>
 	</tr>
 	<tr>
-		<td>Nama MTK</td>
+		<td>Nama Matakuliah</td>
 		<td>:</td>
 		<td>
 			<?= $nama;?>
@@ -38,10 +38,12 @@
 	</tr>
 	<tr>
 		<td colspan="3" align="center">
-			<a href="<?= bazse_url('matakuliah');?.">kembali</a>
+			<a href="<?= base_url('matakuliah');?>">kembali</a>
 			</td>
 			</tr>
 	</table>
 </center>
 </body>
 </html>
+</center>
+</body>

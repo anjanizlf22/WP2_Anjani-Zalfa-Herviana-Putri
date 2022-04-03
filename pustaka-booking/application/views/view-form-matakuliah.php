@@ -1,12 +1,12 @@
 <html>
 <head>
-	<tittle>Form Input Matakuliah</tittle>
+	<tittle>Form Input Data Matakuliah</tittle>
 </head>
 
 <body>
+	<?php echo validation_errors(); ?>
 	<center>
-		<form action="<?= base url ('matakuliah/cetak'); ?>"
-			method="post">
+		<form action="<?= base_url ('matakuliah/cetak'); ?>"method="post">
 			<table>
 				<tr>
 					<th colspan="3">
@@ -20,27 +20,34 @@
 </td>
 </tr>
 <tr>
-	<th>Kode MTK</th>
+	<th>Kode Matakuliah</th>
 	<th>:</th>
 	<td>
 		<input type="text" name="kode" id ="kode">
 	</td>
 </tr>
 <tr>
+	<th>Nama Matakuliah</th>
+					<td>:</td>
+					<td>
+						<input type="text" name="nama" id="nama">
+					</td>
+				</tr>
+				<tr>
 	<th>SKS</th>
 	<td>:</td>
 	<td>
 		<select> name="sks" id="sks">
-			<option> value="">Pilih SKS</option>
-			<option> value="2">2</option>
-			<option> value="3">3</option>
-			<option> valie="4">4</option>
+			<option value="">Pilih SKS</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
 		</select>
 	</td>
 </tr>
 <tr>
-	<td> colspa="3" align="center">
-		<input type="bottom" value="bottom">
+	<td colspan ="3" align="center">
+		<input type="submit" value="submit">
 	</td>
 </tr>
 </table>
